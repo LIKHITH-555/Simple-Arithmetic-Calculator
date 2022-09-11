@@ -158,7 +158,7 @@ string Convert(string infix,int n){
              }
              else if(outStackpre(infix[i])<=inStackpre(st.ctop->data)){
                 x = st.pop();
-                if(x=='('|| x==')'){}
+                if(x=='('|| x==')'){i++;}
                 else{
                     postfix[j++] = x;
                 }
@@ -205,7 +205,7 @@ int Sol(string s){
                 printf("Invalid input\n");
                 break;
             }
-            result = x2/x1;
+            result = (float)x2/x1;
             stk.Push(result);
             break;
             case '^':
@@ -226,5 +226,5 @@ int main(){
     cin>>s;
     n = s.length();
     result = Sol(Convert(s,n));
-    cout<<result;
+    printf("%.3f",result);
 }
