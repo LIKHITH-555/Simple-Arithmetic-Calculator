@@ -22,7 +22,7 @@ class Stack1{
     public:
     CNode *ctop;
     public:
-      Stack1(){ctop==NULL;};
+      Stack1(){ctop=NULL;};
       void push(char c);
       char pop();
       bool isEmpty();
@@ -70,7 +70,7 @@ bool Stack1::isEmpty(){
 class Stack2{
     Node *top;
     public:
-       Stack2(){top==NULL;};
+       Stack2(){top=NULL;};
        void Push(int x);
        float Pop();
        bool IsEmpty();
