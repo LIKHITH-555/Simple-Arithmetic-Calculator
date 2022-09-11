@@ -71,12 +71,12 @@ class Stack2{
     Node *top;
     public:
        Stack2(){top=NULL;};
-       void Push(int x);
+       void Push(float x);
        float Pop();
        bool IsEmpty();
 };
 
-void Stack2::Push(int x){
+void Stack2::Push(float x){
     Node *t = new Node;
     if(t==NULL){
         printf("Stack overflow\n");
